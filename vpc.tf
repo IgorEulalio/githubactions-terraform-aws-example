@@ -3,5 +3,6 @@ resource "aws_vpc" "vpc" {
   instance_tenancy     = "default"
   tags = {
     Name = "vpc"
+    Context = "EKS - Nondefault VPC."
   }
 }
